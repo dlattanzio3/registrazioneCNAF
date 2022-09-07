@@ -1,0 +1,64 @@
+/* row class */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+
+
+.link {
+  color: #ffffff;
+  
+}
+.btn {
+  margin: 0%;
+  background-color: #2e82c2;
+  border: none;
+  color: white;  /*rgb(23, 53, 145)*/
+  padding: 10% 20%;
+  font-size: 1.2vw;
+  cursor: pointer;
+  width: 100%;
+  /* adjustable height based on the page */
+  height: 100%;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #3a94d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  
+  border-radius: 50px;
+  float: left;
+  width: 50%;
+  padding: 10%;
+  border-width: 50px; 
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+  /*height: 300px;*/
+  
+}
+
+/* Clear floats after the columns */
+.row {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  border: 0px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  padding: 0%;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
