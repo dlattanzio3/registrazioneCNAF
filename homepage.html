@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> CNAF Users Registration Page </title>
+</head>
+
+<style>
+.vl {
+ border-left: 1px solid black;
+ height: 560px;
+ position: fixed;
+ left: 50%;
+ top: 155px;
+}
+</style>
+
+<style>
+    .btn {
+      background-color: #2e82c2;
+      border: yes;
+      color: white;  /*rgb(23, 53, 145)*/
+      padding: 20px 40px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 390px;
+      border-radius: 12px;
+    }
+    
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: #3a94d8;
+    }
+    </style>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 180px;
+    text-align: center;
+    /*height: 300px;*/
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+
+
+<body>
+<a href="https://www.cnaf.infn.it/" target="_blank">
+<img src="cnaf_logo.jpg" align="right"></a>
+
+
+<h1 style="color:rgb(23, 53, 145); font-family:Georgia, 'Times New Roman', Times, serif " > Welcome to the CNAF users registration web page </h1>
+<!--<h1 style="color:rgb(23, 53, 145); font-family:'Times New Roman', Times, serif" > Welcome to the CNAF users registration web page </h1>-->
+<h2 style="color:rgb(47, 111, 208); font-family:'Times New Roman', Times, serif;" > Please click on the corresponding button depending on whether you are a INFN user or not. </h2><br>
+
+<!--<button type="button" class="btn"> I'm a INFN member <br>(login with AAI)</button><br><br>
+<button type="button" class="btn"> I'm not a INFN member <br>(de-visu identification)</button>-->
+
+<div class="row">
+  <div class="column" style="background-color:#c6ddee;">
+    <button type="button" class="btn"> I'm a INFN member </button><br><br>
+  </div>
+  <div class="column" style="background-color:#b2d3ec;">
+    <button type="button" class="btn"> I'm not a INFN member </button><br><br>
+     </div>
+</div>
+
+<!--<div class="vl" />--> 
+
+<br>
+<p><b>For getting support, please contact us at:</b> <a href = "mailto: user-support@lists.cnaf.infn.it">user-support@lists.cnaf.infn.it</a></p>
+</body>
+
+
+
+
+
+
+</body>
+
+</html>
