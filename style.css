@@ -8,7 +8,11 @@
 }
 .btn {
   
-  margin: 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
   background-color: #2e82c2;
   border: none;
   color: white;  /*rgb(23, 53, 145)*/
@@ -16,7 +20,27 @@
   font-size: 22px;
   cursor: pointer;
   /*width according to inner text*/
-  width: auto;
+  width: 400px;
+  /* adjustable height based on the page */
+  height: 100%;
+  border-radius: 12px;
+}
+
+
+.btn-infn {
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #f58d04;
+  border: none;
+  color: white;  /*rgb(23, 53, 145)*/
+  padding: 1% 2%;
+  font-size: 22px;
+  cursor: pointer;
+  /*width according to inner text*/
+  width: 400px;
   /* adjustable height based on the page */
   height: 100%;
   border-radius: 12px;
@@ -26,6 +50,13 @@
 .btn:hover {
   background-color: #3a94d8;
 }
+
+/* Darker background on mouse-over */
+.btn-infn:hover {
+  background-color: #F6981E;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -42,7 +73,12 @@
   /*height: 300px;*/
   
 }
-
+div.horizontalgap {
+  float: left;
+  overflow: hidden;
+  height: 100px;
+  width: 0px;
+}
 /* Clear floats after the columns */
 .row {
  
@@ -61,4 +97,9 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
+  min-width: 100%;
+}
+
+a {
+  color:rgb(23, 53, 145)
 }
