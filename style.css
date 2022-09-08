@@ -9,7 +9,7 @@
 .btn {
   
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-left: 5%;
   margin-right: 5%;
 
@@ -30,7 +30,7 @@
 .btn-infn {
   
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-left: 5%;
   margin-right: 5%;
   background-color: #f58d04;
@@ -92,7 +92,12 @@ div.horizontalgap {
 }
 
 html, body {
-  padding: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-color: #f58d04;
+  border-width: 100pt;
   /*font-family: 'Roboto Condensed', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
