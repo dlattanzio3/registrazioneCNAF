@@ -1,143 +1,163 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<title> CNAF Users Registration Page </title>
-<link rel="stylesheet" href="style.css">
-</head>
-<a href="https://www.cnaf.infn.it/" target="_blank">
-<img src="cnaf_logo.jpg" align="left"></a>
+  <head>
+    <title> CNAF Users Registration Page </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
 
-<body>
+  <body>
+    <a href="https://www.cnaf.infn.it/" target="_blank">
+    <img src="cnaf_logo.jpg" align="right"></a>
+    <h1 style="color:rgb(23, 53, 145)" > Welcome to the CNAF users registration web page </h1>
+    <h2 style="color:rgb(47, 111, 208)" > Please fill the Access Authorization Form in order to request an account at CNAF </h2>
 
-<h1 style="color:rgb(23, 53, 145)" > Welcome to the CNAF users registration web page </h1>
-<h2 style="color:rgb(47, 111, 208)" > Please fill the Access Authorization Form in order to request an account at CNAF </h2>
+    <p> You can find the procedure described in the "How to get an account at CNAF" section at the following link: <a href="https://www.cnaf.infn.it/en/users-faqs/" target="_blank"> https://www.cnaf.infn.it/en/users-faqs/ </a> </p>
+    <p> <b>Note:</b> Please read the <a href="https://www.cnaf.infn.it/wp-content/uploads/2020/03/Disciplinare_2020_EN.pdf" target="_blank"> Regulation On The Use Of INFN Computing Resources </a>    
+      and the <a href="https://dpo.infn.it/wp-content/uploads/2020/07/Informativa_generale_181204_EN.pdf" target="_blank"> General Information Note On Processing Of Personal Data By INFN </a> </p>
 
-<p> You can find the procedure described in the "How to get an account at CNAF" section at the following link: <a href="https://www.cnaf.infn.it/en/users-faqs/" target="_blank"> https://www.cnaf.infn.it/en/users-faqs/ </a> </p>
-<p> <b>Note:</b> Please read the <a href="https://www.cnaf.infn.it/wp-content/uploads/2020/03/Disciplinare_2020_EN.pdf" target="_blank"> Regulation On The Use Of INFN Computing Resources </a>    
-   and the <a href="https://dpo.infn.it/wp-content/uploads/2020/07/Informativa_generale_181204_EN.pdf" target="_blank"> General Information Note On Processing Of Personal Data By INFN </a> </p>
+    <h2 style="color:rgb(23, 53, 145);"> Form for INFN members </h2>
 
-<h2 style="color:rgb(23, 53, 145);"> Form for INFN members </h2>
+    <form class="recaptchaForm">
+      
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="" required><br><br>
 
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="" required><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="" required><br><br>
 
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="" required><br><br>
+      <label for="email">Email address:</label><br>
+      <input type="email" id="email" name="email" value="" required><br><br>
 
-  <label for="email">Email address:</label><br>
-  <input type="email" id="email" name="email" value="" required><br><br>
+      <!-- Employed by:<br><br> -->
+      <label for="company">INFN - Division/University/Company/Other:</label><br>
+      <input type="text" id="company" name="company" value=""><br><br>
 
-  <!-- Employed by:<br><br> -->
-  <label for="company">INFN - Division/University/Company/Other:</label><br>
-  <input type="text" id="company" name="company" value=""><br><br>
+      <label for="gruppo">Group or experiment:</label><br>
+      <select id="gruppo" name="gruppo" required>
+        <option value="" selected> </option>
+        <optgroup label="LHC experiments"> 
+        <option value="alice"> ALICE </option>
+        <option value="atlas"> ATLAS </option>
+        <option value="cms"> CMS </option>
+        <option value="lhcb">LHCb</option> </optgroup>
+        <optgroup label="Group I"> 
+        <option value="belle2">Belle II</option>
+        <option value="cdf"> CDF </option>
+        <option value="fcc"> FCC </option>
+        <option value="kloe"> KLOE </option>
+        <option value="lhcf"> LHCf </option>
+        <option value="lhcb tier2"> LHCB Tier-2 </option>
+        <option value="muoncoll"> Muon Collider </option>
+        <option value="na62"> NA62 </option>
+        <option value="padme"> PADME </option> </optgroup>
+        <optgroup label="Group II"> 
+        <option value="ams"> AMS2 </option>
+        <option value="auger"> AUGER </option>
+        <option value="borexino"> Borexino </option>
+        <option value="cta"> CTA </option>
+        <option value="cuore"> CUORE </option>
+        <option value="cupid"> CUPID </option>
+        <option value="cygno"> CYGNO </option>
+        <option value="dampe"> DAMPE </option>
+        <option value="darkside"> DarkSide </option> 
+        <option value="dune">DUNE/Neutrino</option>
+        <option value="enubet">ENUBET</option>
+        <option value="euclid">EUCLID</option>
+        <option value="fermi-glast">FERMI-GLAST</option>
+        <option value="gaps"> GAPS </option>
+        <option value="gerda"> GERDA </option>
+        <option value="herd"> HERD </option>
+        <option value="hyperk">HYPER-K</option>
+        <option value="icarus">ICARUS</option>
+        <option value="juno">JUNO</option>
+        <option value="km3">KM3</option>
+        <option value="limadou">LIMADOU</option>
+        <option value="litebird"> LITEBIRD </option>
+        <option value="lspe"> LSPE </option>
+        <option value="news"> NEWS </option>
+        <option value="nucleus">NUCLEUS</option>
+        <option value="pamela">PAMELA</option>
+        <option value="qubic">QUBIC</option>
+        <option value="spb2">SPB2_MiniEUSO</option>
+        <option value="tristan">Tristan</option>
+        <option value="virgo"> Virgo </option>
+        <option value="xenon"> Xenon100 </option> </optgroup>
+        <optgroup label="Group III"> 
+        <option value="agata-gamma">Agata-GAMMA</option>
+        <option value="asfin"> ASFIN </option>
+        <option value="eic-net"> EIC-NET </option>
+        <option value="famu"> FAMU </option>
+        <option value="foot"> FOOT </option>
+        <option value="jlab12"> JLAB12 </option>
+        <option value="newchim-farcos"> NEWCHIM-FARCOS </option>
+        <option value="n-tof"> n-TOF </option>
+        <option value="nuclex-fazia"> Nuclex-Fazia </option> </optgroup>
+      </select>
+      <br><br>
 
-  <label for="gruppo">Group or experiment:</label><br>
-  <select id="gruppo" name="gruppo" required>
-    <option value="" selected> </option>
-    <optgroup label="LHC experiments"> 
-    <option value="alice"> ALICE </option>
-    <option value="atlas"> ATLAS </option>
-    <option value="cms"> CMS </option>
-    <option value="lhcb">LHCb</option> </optgroup>
-    <optgroup label="Group I"> 
-    <option value="belle2">Belle II</option>
-    <option value="cdf"> CDF </option>
-    <option value="fcc"> FCC </option>
-    <option value="kloe"> KLOE </option>
-    <option value="lhcf"> LHCf </option>
-    <option value="lhcb tier2"> LHCB Tier-2 </option>
-    <option value="muoncoll"> Muon Collider </option>
-    <option value="na62"> NA62 </option>
-    <option value="padme"> PADME </option> </optgroup>
-    <optgroup label="Group II"> 
-    <option value="ams"> AMS2 </option>
-    <option value="auger"> AUGER </option>
-    <option value="borexino"> Borexino </option>
-    <option value="cta"> CTA </option>
-    <option value="cuore"> CUORE </option>
-    <option value="cupid"> CUPID </option>
-    <option value="cygno"> CYGNO </option>
-    <option value="dampe"> DAMPE </option>
-    <option value="darkside"> DarkSide </option> 
-    <option value="dune">DUNE/Neutrino</option>
-    <option value="enubet">ENUBET</option>
-    <option value="euclid">EUCLID</option>
-    <option value="fermi-glast">FERMI-GLAST</option>
-    <option value="gaps"> GAPS </option>
-    <option value="gerda"> GERDA </option>
-    <option value="herd"> HERD </option>
-    <option value="hyperk">HYPER-K</option>
-    <option value="icarus">ICARUS</option>
-    <option value="juno">JUNO</option>
-    <option value="km3">KM3</option>
-    <option value="limadou">LIMADOU</option>
-    <option value="litebird"> LITEBIRD </option>
-    <option value="lspe"> LSPE </option>
-    <option value="news"> NEWS </option>
-    <option value="nucleus">NUCLEUS</option>
-    <option value="pamela">PAMELA</option>
-    <option value="qubic">QUBIC</option>
-    <option value="spb2">SPB2_MiniEUSO</option>
-    <option value="tristan">Tristan</option>
-    <option value="virgo"> Virgo </option>
-    <option value="xenon"> Xenon100 </option> </optgroup>
-    <optgroup label="Group III"> 
-    <option value="agata-gamma">Agata-GAMMA</option>
-    <option value="asfin"> ASFIN </option>
-    <option value="eic-net"> EIC-NET </option>
-    <option value="famu"> FAMU </option>
-    <option value="foot"> FOOT </option>
-    <option value="jlab12"> JLAB12 </option>
-    <option value="newchim-farcos"> NEWCHIM-FARCOS </option>
-    <option value="n-tof"> n-TOF </option>
-    <option value="nuclex-fazia"> Nuclex-Fazia </option> </optgroup>
-  </select>
-<br><br>
+      <label for="username">Preferred username:</label><br>
+      <input type="text" id="username" name="username" value=""><br><br>
 
-<label for="username">Preferred username:</label><br>
-<input type="text" id="username" name="username" value=""><br><br>
+      <p>Apply for Access to INFN-CNAF Computing and Network Resources for the following reason:</p>
+      <textarea name="reason" rows="10" cols="60" required></textarea><br><br>
 
-<p>Apply for Access to INFN-CNAF Computing and Network Resources for the following reason:</p>
-<textarea name="reason" rows="10" cols="60" required></textarea><br><br>
+      <input type="radio" id="read" name="read" required>
+      <label for="read">I do hereby certify that I have received, read, understood and will comply with the Terms and Conditions specified in the following documents:</label><br>
 
-<input type="radio" id="read" name="read" required>
-<label for="read">I do hereby certify that I have received, read, understood and will comply with the Terms and Conditions specified in the following documents:</label><br>
+      <ul>
+        <li><a href="https://www.cnaf.infn.it/wp-content/uploads/2020/03/Disciplinare_2020_EN.pdf" target="_blank"> Regulation On The Use Of INFN Computing Resources </a></li>
+        <li><a href="https://dpo.infn.it/wp-content/uploads/2020/07/Informativa_generale_181204_EN.pdf" target="_blank"> General Information Note On Processing Of Personal Data By INFN </a></li>
+      </ul>
 
-<ul>
-  <li><a href="https://www.cnaf.infn.it/wp-content/uploads/2020/03/Disciplinare_2020_EN.pdf" target="_blank"> Regulation On The Use Of INFN Computing Resources </a></li>
-  <li><a href="https://dpo.infn.it/wp-content/uploads/2020/07/Informativa_generale_181204_EN.pdf" target="_blank"> General Information Note On Processing Of Personal Data By INFN </a></li>
-</ul>
+      <input type="radio" id="consent" name="consent" required>
+      <label for="consent">I consent to be included by the INFN-CNAF personnel in institutional distribution lists to receive information and notifications about: </label><br>
 
-<input type="radio" id="consent" name="consent" required>
-<label for="consent">I consent to be included by the INFN-CNAF personnel in institutional distribution lists to receive information and notifications about: </label><br>
+      <ul>
+        <li>the data center and its services status</li>
+        <li>scheduled and unscheduled downtimes</li>
+        <li>planned maintenance intervention</li>
+        <li>network outages</li>
+        <li>cyber security connected to the data center usage</li>
+        <li>surveys about the data center services</li>
+      </ul>  
 
-<ul>
-  <li>the data center and its services status</li>
-  <li>scheduled and unscheduled downtimes</li>
-  <li>planned maintenance intervention</li>
-  <li>network outages</li>
-  <li>cyber security connected to the data center usage</li>
-  <li>surveys about the data center services</li>
-</ul>  
+      <!--<p><b>Identification document:</b></p>
+      <label for="typedoc">Type of document:</label><br>
+      <input type="text" id="typedoc" name="typedoc" value="" required><br><br>
 
-<!--<p><b>Identification document:</b></p>
-<label for="typedoc">Type of document:</label><br>
-<input type="text" id="typedoc" name="typedoc" value="" required><br><br>
+      <label for="ndoc">Identification Number:</label><br>
+      <input type="text" id="ndoc" name="ndoc" value="" required><br><br>-->
 
-<label for="ndoc">Identification Number:</label><br>
-<input type="text" id="ndoc" name="ndoc" value="" required><br><br>-->
+      <!--
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date" required><br><br>
+      -->
+      <script src='https://www.google.com/recaptcha/api.js?hl=it'></script>
 
-<!--
-<label for="date">Date:</label><br>
-<input type="date" id="date" name="date" required><br><br>
--->
+      <div class="g-recaptcha" data-sitekey="6LcKV94hAAAAAJvG5Dy0PHVoeyHhEXOuc-7rnIF2" data-theme="light" ></div>
 
-<button type="submit" class="btn" >Submit</button>
-</form> 
+      
+      
 
+      <button type="submit" class="btn" >Submit</button>
 
-</body>
+    </form> 
+    
+
+  </body>
 
 </html>
+
+<script>
+
+  window.onload = function() {
+      var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+      if($recaptcha) {
+      $recaptcha.setAttribute("required", "required");
+  }
+  };
+
+</script>
